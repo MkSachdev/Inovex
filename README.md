@@ -7,7 +7,7 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-green.svg)](LICENSE)
 [![EDA Toolchain](https://img.shields.io/badge/EDA-Verilator_%7C_Cocosim-blueviolet.svg)](#)
 
-> *Developed by **Team Inovex!** (Team ID: 172703) for Smart India Hackathon 2026 | Theme: Smart Automation (Software)*
+> *Developed by **Team Inovex!** for Smart India Hackathon 2026 | Theme: Smart Automation (Software)*
 
 ---
 
