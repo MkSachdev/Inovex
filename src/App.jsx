@@ -618,25 +618,25 @@ export default function App() {
                   </div>
                 </div>
 
-                {/* Overflow Bug Signal */}
+                                {/* Overflow Bug Signal */}
                 <div className="flex items-center justify-between">
                   <span className="w-16 text-rose-500 font-bold text-[11px]">overflow</span>
                   <div className="flex-1 px-4">
                     {step >= 4 && !isPatched ? (
-                      <div className="h-5 flex items-center">
-                        <div className={`w-1/2 h-[2px] ${isDark ? 'bg-slate-600' : 'bg-slate-300'}`}></div>
-                        <div className="w-8 h-4 border border-rose-500 bg-rose-500/20 text-rose-500 text-[9px] flex items-center justify-center font-bold animate-pulse">
-                          0 (FAIL)
-                        </div>
-                        <div className={`flex-1 h-[2px] ${isDark ? 'bg-slate-600' : 'bg-slate-300'}`}></div>
+                      <div className="h-6 flex items-center justify-center gap-2">
+                        <div className={`flex-1 h-[2px] ${isDark ? 'bg-slate-700' : 'bg-slate-300'}`}></div>
+                        <span className="px-2.5 py-0.5 rounded text-[10px] font-bold tracking-wide border border-rose-500/50 bg-rose-500/15 text-rose-500 animate-pulse whitespace-nowrap shadow-2xs">
+                          0 [ASSERTION FAIL]
+                        </span>
+                        <div className={`flex-1 h-[2px] ${isDark ? 'bg-slate-700' : 'bg-slate-300'}`}></div>
                       </div>
                     ) : isPatched ? (
-                      <div className="h-5 flex items-center">
-                        <div className={`w-1/2 h-[2px] ${isDark ? 'bg-slate-600' : 'bg-slate-300'}`}></div>
-                        <div className="w-8 h-4 border border-emerald-500 bg-emerald-500/20 text-emerald-600 text-[9px] flex items-center justify-center font-bold">
-                          1 (PASS)
-                        </div>
-                        <div className={`flex-1 h-[2px] ${isDark ? 'bg-slate-600' : 'bg-slate-300'}`}></div>
+                      <div className="h-6 flex items-center justify-center gap-2">
+                        <div className={`flex-1 h-[2px] ${isDark ? 'bg-slate-700' : 'bg-slate-300'}`}></div>
+                        <span className="px-2.5 py-0.5 rounded text-[10px] font-bold tracking-wide border border-emerald-500/50 bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 whitespace-nowrap shadow-2xs">
+                          1 [PASS VERIFIED]
+                        </span>
+                        <div className={`flex-1 h-[2px] ${isDark ? 'bg-slate-700' : 'bg-slate-300'}`}></div>
                       </div>
                     ) : (
                       <div className={`w-full h-[2px] ${isDark ? 'bg-slate-700' : 'bg-slate-300'}`}></div>
