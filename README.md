@@ -24,7 +24,7 @@
 
 ## 🚀 Live Interactive Prototype
 
-- **Live Web Application**: https://inovex.vercel.app
+- **Live Web Application**: https://inovex-self.vercel.app/
 - **Source Code Repository**: https://github.com/MkSachdev/Inovex
 
 ---
