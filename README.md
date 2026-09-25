@@ -7,7 +7,6 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-green.svg)](LICENSE)
 [![EDA Toolchain](https://img.shields.io/badge/EDA-Verilator_%7C_Cocosim-blueviolet.svg)](#)
 
-> **"AI-Powered Platform to Find and Explain Chip Design Bugs, so Indian Silicon Is Verified with Indian Software"**  
 > *Developed by **Team Inovex!** (Team ID: 172703) for Smart India Hackathon 2026 | Theme: Smart Automation (Software)*
 
 ---
@@ -31,17 +30,6 @@
 ---
 
 ## 🎯 Key Architectural Pillars
-
-┌──────────────────────┐ ┌────────────────────────┐ ┌──────────────────────┐
-│ 1. RTL AST Parser │ ───► │ 2. SVA Synthesizer │ ───► │ 3. Verilator Engine │
-│ Ingest Verilog/SV │ │ Air-Gapped Ollama LLM │ │ Cycle-Accurate Sim │
-└──────────────────────┘ └────────────────────────┘ └──────────┬───────────┘
-│
-┌──────────────────────┐ ┌────────────────────────┐ ▼
-│ 5. Verified Tapeout │ ◄─── │ 4. Auto-Patch Engine │ ◄─── [ SVA ASSERTION FAIL ]
-│ Signed Audit Report │ │ AST Diff + Re-verify │ Fault Cycle Pinpointed
-└──────────────────────┘ └────────────────────────┘
-
 
 1. **RTL AST Parser & Ingestion**: Ingests Verilog/SystemVerilog RTL and extracts Abstract Syntax Trees (AST), Control Flow Graphs (CFG), and arithmetic boundary conditions.
 2. **Autonomous SVA Synthesis (Ollama)**: Generates high-coverage SystemVerilog Assertions (IEEE 1800), temporal formal properties, and corner-case test stimulus without sending confidential IP to external clouds.
