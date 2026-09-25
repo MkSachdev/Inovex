@@ -311,7 +311,7 @@ export default function App() {
 
           {/* GitHub Link */}
           <a 
-            href="https://github.com/Team-Inovex/Inovex-SIH26202" 
+            href="https://github.com/MkSachdev/Inovex" 
             target="_blank" 
             rel="noreferrer"
             className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-sky-600 hover:bg-sky-500 text-white font-medium transition shadow-md shadow-sky-600/20"
@@ -618,7 +618,7 @@ export default function App() {
                   </div>
                 </div>
 
-                                {/* Overflow Bug Signal */}
+                {/* Overflow Bug Signal */}
                 <div className="flex items-center justify-between">
                   <span className="w-16 text-rose-500 font-bold text-[11px]">overflow</span>
                   <div className="flex-1 px-4">
